@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_menu">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:background="#00ff0000"
+        android:text="개요"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="MenuClick"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:background="#00ff0000"
+        android:text="장점과 단점"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="AdvantageClick"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:background="#00ff0000"
+        android:text="기본방법"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="MethodClick"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:background="#00ff0000"
+        android:text="Tip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="TipClick"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="144dp"
+        android:background="#00ff0000"
+        android:text="출처"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:onClick="OriginClick"/>
+
+</RelativeLayout>
