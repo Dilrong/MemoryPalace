@@ -67,10 +67,36 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="144dp"
         android:background="#00ff0000"
+        android:onClick="TestClick"
+        android:text="Test"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="49dp"
+        android:background="#00ff0000"
+        android:onClick="OriginClick"
         android:text="출처"
         android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textSize="24dp"
-        android:onClick="OriginClick"/>
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Index"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
 
 </RelativeLayout>

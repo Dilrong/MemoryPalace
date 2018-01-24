@@ -1,6 +1,7 @@
 package dilrong.memorypalace;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -13,11 +14,24 @@ public class MenuActivity extends AppCompatActivity {
     //시간측정
     private long   backPressedTime = 0;
 
+    private  static MediaPlayer bgm;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        bgm = MediaPlayer.create(this, R.raw.darktimes);
+        bgm.setLooping(true);
+        bgm.start();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        bgm.stop();
+    }
+
     public void MenuClick(View v){
         Intent intent = new Intent(this, OutlineActivity.class);
         startActivity(intent);
@@ -38,6 +52,12 @@ public class MenuActivity extends AppCompatActivity {
 
     public void TipClick(View v){
         Intent intent = new Intent(this, Tip1Activity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void TestClick(View v){
+        Intent intent = new Intent(this, TestIndexActivity.class);
         startActivity(intent);
         finish();
     }

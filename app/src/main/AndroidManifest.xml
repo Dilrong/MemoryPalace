@@ -4,8 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/memorypalace_icon"
+        android:roundIcon="@mipmap/memorypalace_icon"
+        android:label="기억의궁전"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -30,6 +31,9 @@
         <activity android:name=".Tip2Activity"/>
         <activity android:name=".Tip3Activity"/>
         <activity android:name=".OriginActivity"/>
+        <activity android:name=".TestIndexActivity"/>
+        <activity android:name=".SteveJobsSpeechActivity"/>
+        <activity android:name=".ObamaSpeechActivity"/>
     </application>
 
 </manifest>
